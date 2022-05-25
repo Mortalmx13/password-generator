@@ -18,7 +18,7 @@ alert("Your password will be " + input + " characters long")
 }
 
   
-
+var numOfTrues = 0;
 //lowercase choice
 var lowercaseChoice = prompt("Would you like lowercase letters? yes or no")
 if(lowercaseChoice === "yes"){
@@ -66,14 +66,35 @@ if(lowercaseChoice === false && uppercaseChoice === false && numberChoice === fa
   return generatePassword();
 
 }
+
 retVal = "";
-for(var i = 0, n = input; i < input; i++ ){
-retVal += lowercase.upercase.numbsers.special.charAt(Math.floor(Math.random()* n));
-// retVal += uppercase.charAt(Math.floor(Math.random()* n));
-// retVal += numbsers.charAt(Math.floor(Math.random()* n));
-// retVal += special.charAt(Math.floor(Math.random()* n));
+for( count = 0; count < input; ){
+  if(lowercaseChoice=== true){
+    retVal += lowercase.charAt(Math.floor(Math.random()* lowercase.length));
+    count++;
+  }
+  if(uppercaseChoice === true){
+    retVal += uppercase.charAt(Math.floor(Math.random()* uppercase.length));
+    count++;
+  }
+  if(numberChoice === true){
+    retVal += numbsers.charAt(Math.floor(Math.random()* numbsers.length));
+    count++;
+  }
+  if(specialChoice === true){
+    retVal += special.charAt(Math.floor(Math.random()* special.length));
+    count++;
+  }
+
+  
+
+
+
+
+
 }
 console.log(retVal)
+console.log(numOfTrues)
 return " "
 
 //console.log(uppercaseChoice);
