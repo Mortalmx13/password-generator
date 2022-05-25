@@ -13,9 +13,10 @@
 this assignment was to make a randomly generated password in java script. this was to have a better understanding on how to set up functions and alerts. 
 
 ## Visuals
-![Portfolio](./images/Password-Generator.png)
+![Password Generator](./images/Password-Generator.png)
 
 ## Resources
-- [Live Site](https://mortalmx13.github.io/portfolio/)
+- [Live Site](https://mortalmx13.github.io/password-generator/)
 
-- [Respository](https://github.com/Mortalmx13/portfolio)
+
+- [Respository](https://github.com/Mortalmx13/password-generator)
