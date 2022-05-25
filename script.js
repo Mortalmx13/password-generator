@@ -66,7 +66,14 @@ if(lowercaseChoice === false && uppercaseChoice === false && numberChoice === fa
   return generatePassword();
 
 }
-
+retVal = "";
+for(var i = 0, n = input; i < input; i++ ){
+retVal += lowercase.upercase.numbsers.special.charAt(Math.floor(Math.random()* n));
+// retVal += uppercase.charAt(Math.floor(Math.random()* n));
+// retVal += numbsers.charAt(Math.floor(Math.random()* n));
+// retVal += special.charAt(Math.floor(Math.random()* n));
+}
+console.log(retVal)
 return " "
 
 //console.log(uppercaseChoice);
